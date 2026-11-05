@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <div>
+            <label for="username">User name</label>
+            <input id="username" name="username" type="text" minlength="5" placeholder="User name" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="pass">Password</label>
+            <input id="pass" name="password" type="password" minlength="8" placeholder="Password" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" name="dob" type="date" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="specialization">Academic Specialization</label>
+            <select id="specialization" name="specialization" required>
+                <option value="">-- Select --</option>
+                <option value="soft-eng">Software Engineering</option>
+                <option value="med">Medicine</option>
+                <option value="psyc">Psychology</option>
+                <option value="law">Law</option>
+                <option value="nurs">Nursing</option>
+            </select>
+        </div>
+        <br>
+
+        <fieldset>
+            <legend>What is your preferred language?</legend>
+            <div>
+                <input id="html" type="radio" name="lang" value="html" required>
+                <label for="html">HTML</label>
+            </div>
+            <div>
+                <input id="java" type="radio" name="lang" value="java">
+                <label for="java">Java</label>
+            </div>
+            <div>
+                <input id="python" type="radio" name="lang" value="python">
+                <label for="python">Python</label>
+            </div>
+            <div>
+                <input id="css" type="radio" name="lang" value="css">
+                <label for="css">CSS</label>
+            </div>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>What are your favorite hobbies?</legend>
+            <div>
+                <input id="soccer" type="checkbox" name="hobby" value="soccer">
+                <label for="soccer">Soccer</label>
+            </div>
+            <div>
+                <input id="swimming" type="checkbox" name="hobby" value="swimming">
+                <label for="swimming">Swimming</label>
+            </div>
+            <div>
+                <input id="singing" type="checkbox" name="hobby" value="singing">
+                <label for="singing">Singing</label>
+            </div>
+            <div>
+                <input id="race" type="checkbox" name="hobby" value="race">
+                <label for="race">Race</label>
+            </div>
+        </fieldset>
+        <br>
+
+        <div>
+            <label for="age">Age (from 18 to 25)</label>
+            <input id="age" name="age" type="range" min="18" max="25" value="18">
+        </div>
+        <br>
+
+        <div>
+            <label for="photo">Profile Picture</label>
+            <input id="photo" name="photo" type="file" accept="image/*">
+        </div>
+        <br>
+
+        <div>
+            <label for="bio">About you</label><br>
+            <textarea id="bio" name="bio" rows="4" minlength="10" maxlength="100"
+                      placeholder="Write something about yourself..." required></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input id="terms" type="checkbox" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
